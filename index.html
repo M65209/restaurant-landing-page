@@ -1,250 +1,318 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foodie Restaurant</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
     <!-- Navigation -->
     <header>
-        <nav class="navbar">
-            <div class="logo">🍔 Foodie</div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Foods</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
-            <a href="#" class="btn">Login</a>
-        </nav>
+      <nav class="navbar flex">
+        <div class="logo">🍔 Foodie</div>
+        <ul class="nav-links flex">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Foods</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+        <a href="#" class="text-primary p-8 rounded-md border border-primary">Login</a>
+      </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>
-                Desire <span>Food</span><br>
-                For Your Taste
-            </h1>
-            <p>
-                Food is what we eat to stay active and healthy. <br>
-                It comes in many ways and flavors, from fruits to minerals and grains.
-            </p>
-            <button type="button" class="btn2">Order now</button>
-        </div>
+    <section class="hero flex space-between">
+      <div class="hero-content">
+        <h1>
+          Desire <span>Food</span><br />
+          For Your Taste
+        </h1>
+        <p>
+          Food is what we eat to stay active and healthy. <br />
+          It comes in many ways and flavors, from fruits to minerals and grains.
+        </p>
+        <button id="order-now" class="text-white background-primary p-8 rounded-md">Order now</button>
+      </div>
 
-        <div class="hero-image">
-            <img src="images/image 22.png" alt="Delicious Food">
-            <div class="card-delivery">
-                <img src="images/02.png" alt="Chef Profile">
-                <span>Delivery in 30 Min</span>
+      <div class="hero-image flex relative">
+        <img src="images/image 22.png" alt="Delicious Food" />
+        <div class="card-delivery ">
+          <div class="rocket flex justify-center gap-2 background-white p-8 rounded-sm">
+            <img src="images/rocket.png" alt="Chef Profile" />
+            <div class="flex flex-column justify-center">
+                <strong>Fast Delivery</strong>
+                <span>Within 30 minutes</span>
             </div>
-            <div class="card-profile">
-                <img src="images/01.png" alt="Chef Profile">
-                <div class="profile-info">
-                    <strong>Ali ahmad</strong>
-                    <span>4.5 | 1k Likes</span>
-                </div>
-            </div>
+          </div>
+
         </div>
+        <div class="card-profile">
+          <img src="images/01.png" alt="Chef Profile" />
+          <div class="profile-info">
+            <strong>Ali ahmad</strong>
+            <span>4.5 | 1k Likes</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Features Section -->
-    <section class="features">
-        <div class="container">
-            <div class="feature-card">
-                <img src="images/01.png" alt="Quality">
-                <h3>Quality Food</h3>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
-                <a href="#">Learn More</a>
-            </div>
-
-            <div class="feature-card">
-                <img src="images/02.png" alt="Fast Delivery">
-                <h3>Fast Delivery</h3>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
-                <a href="#">Learn More</a>
-            </div>
-
-            <div class="feature-card">
-                <img src="images/4.png" alt="Affordable">
-                <h3>Affordable Price</h3>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
-                <a href="#">Learn More</a>
-            </div>
-
-            <div class="feature-card">
-                <img src="images/5.png" alt="Easy Order">
-                <h3>Easy Ordering</h3>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
-                <a href="#">Learn More</a>
-            </div>
+    <section class="features flex">
+      <div class="container flex">
+        <div class="feature-card">
+          <img src="images/01.png" alt="Quality" />
+          <h3>Quality Food</h3>
+          <p>
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+          </p>
+          <a href="#">Learn More</a>
         </div>
+
+        <div class="feature-card">
+          <img src="images/02.png" alt="Fast Delivery" />
+          <h3>Fast Delivery</h3>
+          <p>
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+
+        <div class="feature-card">
+          <img src="images/4.png" alt="Affordable" />
+          <h3>Affordable Price</h3>
+          <p>
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+
+        <div class="feature-card">
+          <img src="images/5.png" alt="Easy Order" />
+          <h3>Easy Ordering</h3>
+          <p>
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
     </section>
 
     <!-- About Section (Text Left, Image Right) -->
-    <section class="about">
-        <div class="about-first">
-            <h2>Why People Choose Us</h2>
+    <section class="about flex">
+      <div class="about-first">
+        <h2>Why People Choose Us</h2>
 
-            <h3>✔ Convenient and Reliable</h3>
-            <p>Whether you dine in, take out, or order delivery, our service is convenient, fast, and reliable, making mealtime hassle-free.</p>
+        <h3>✔ Convenient and Reliable</h3>
+        <p>
+          Whether you dine in, take out, or order delivery, our service is
+          convenient, fast, and reliable, making mealtime hassle-free.
+        </p>
 
-            <h3>✔ Variety of Dishes</h3>
-            <p>From hearty meals to light snacks, we offer a wide range of options to suit every taste and craving.</p>
+        <h3>✔ Variety of Dishes</h3>
+        <p>
+          From hearty meals to light snacks, we offer a wide range of options to
+          suit every taste and craving.
+        </p>
 
-            <h3>✔ Eat Burger</h3>
-            <p>Our burgers are grilled to perfection, with juicy patties and flavorful toppings that make every bite a delicious experience.</p>
-        </div>
+        <h3>✔ Eat Burger</h3>
+        <p>
+          Our burgers are grilled to perfection, with juicy patties and
+          flavorful toppings that make every bite a delicious experience.
+        </p>
+      </div>
 
-        <div class="about-image">
-            <img src="images/left.png" alt="Food Plate">
-        </div>
+      <div class="about-image">
+        <img src="images/left.png" alt="Food Plate" />
+      </div>
     </section>
 
     <!-- Dishes Section -->
     <section class="Dishes">
-        <div class="Dishes-text">
-            <h2>Our Best Seller Dishes</h2>
-            <p>Our best selling dishes are made with the freshest<br>ingredients and served hot every time.</p>
+      <div class="Dishes-text">
+        <h2>Our Best Seller Dishes</h2>
+        <p>
+          Our best selling dishes are made with the freshest<br />ingredients
+          and served hot every time.
+        </p>
+      </div>
+
+      <div class="food-container">
+        <div class="food-card flex">
+          <img src="images/Frame 45 (1).png" alt="Breakfast Food" />
+          <h3>Breakfast Food</h3>
+          <p>$20</p>
         </div>
-        
-        <div class="food-container">
-            <div class="food-card">
-                <img src="images/Frame 45 (1).png" alt="Breakfast Food">
-                <h3>Breakfast Food</h3>
-                <p>$20</p>
-            </div>
 
-            <div class="food-card">
-                <img src="images/Frame 45 (2).png" alt="Breakfast Food">
-                <h3>Breakfast Food</h3>
-                <p>$25</p>
-            </div>
-
-            <div class="food-card">
-                <img src="images/Frame 45 (3).png" alt="Breakfast Food">
-                <h3>Breakfast Food</h3>
-                <p>$30</p>
-            </div>
-
-            <div class="food-card">
-                <img src="images/Frame 45.png" alt="Breakfast Food">
-                <h3>Breakfast Food</h3>
-                <p>$35</p>
-            </div>
-
-            <div class="food-card">
-                <img src="images/Frame 45 (4).png" alt="Breakfast Food">
-                <h3>Breakfast Food</h3>
-                <p>$18</p>
-            </div>
-
-            <div class="food-card">
-                <img src="images/Frame 45 (5).png" alt="Breakfast Food">
-                <h3>Breakfast Food</h3>
-                <p>$15</p>
-            </div>
+        <div class="food-card flex">
+          <img src="images/Frame 45 (2).png" alt="Breakfast Food" />
+          <h3>Breakfast Food</h3>
+          <p>$25</p>
         </div>
+
+        <div class="food-card flex">
+          <img src="images/Frame 45 (3).png" alt="Breakfast Food" />
+          <h3>Breakfast Food</h3>
+          <p>$30</p>
+        </div>
+
+        <div class="food-card flex">
+          <img src="images/Frame 45.png" alt="Breakfast Food" />
+          <h3>Breakfast Food</h3>
+          <p>$35</p>
+        </div>
+
+        <div class="food-card flex">
+          <img src="images/Frame 45 (4).png" alt="Breakfast Food" />
+          <h3>Breakfast Food</h3>
+          <p>$18</p>
+        </div>
+
+        <div class="food-card flex">
+          <img src="images/Frame 45 (5).png" alt="Breakfast Food" />
+          <h3>Breakfast Food</h3>
+          <p>$15</p>
+        </div>
+
+        <div class="food-card flex">
+          <img src="images/Frame 45 (5).png" alt="Breakfast Food" />
+          <h3>Breakfast Food</h3>
+          <p>$15</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- List dishes -->
+    <section class="dishes-list">
+      <h2>Our Dishes</h2>
+      <ul id="dish-list">
+       
+      </ul>
     </section>
 
     <!-- Testimonial Section -->
     <section class="testimonial">
-        <div class="testimonial-text">
-            <h2>Customer Feedback</h2>
-            <p>"I recently ordered from this restaurant<br> and was blown away by the quality of<br> the food and the speed of delivery. Highly recommend!"</p>
-            <h4>- Happy Customer</h4>
-        </div>
+      <div class="testimonial-text">
+        <h2>Customer Feedback</h2>
+        <p>
+          "I recently ordered from this restaurant<br />
+          and was blown away by the quality of<br />
+          the food and the speed of delivery. Highly recommend!"
+        </p>
+        <h4>- Happy Customer</h4>
+      </div>
 
-        <div class="testimonial-image">
-            <img src="images/Chef making ok sign over white background.png" alt="Chef">
-        </div>
+      <div class="testimonial-image">
+        <img
+          src="images/Chef making ok sign over white background.png"
+          alt="Chef"
+        />
+      </div>
     </section>
 
     <!-- Newsletter Section -->
-    <section class="newsletter">
-        <div class="newslater-p">
-<h3>Join our <span class="newslatter-3">Newslatter</span></h3>
+    <section class="newsletter flex">
+      <div class="newslater-p">
+        <h3>Join our <span class="newslatter-3">Newslatter</span></h3>
         <p>Be the first to know about our latest updates</p>
-        </div>
-        
-        <form class="newsletter-form"> 
-            <label for="email-input">Email</label>
-            <input type="email" id="email-input" placeholder="Enter your email" required>
-            <button type="submit">Subscribe</button>
-        </form>
-    </section >
+      </div>
+
+      <div class="newsletter-form">
+        <label for="email-input">Email</label>
+        <input
+          type="email"
+          id="email-input"
+          placeholder="Enter your email"
+          required
+        />
+         <button id="subscribe" class="text-white background-primary p-8 rounded-md">Subscribe</button>
+      </div>
+    </section>
 
     <!-- Footer -->
-<footer class="footer">
-
-    <div class="footer-column">
+    <footer class="footer flex">
+      <div class="footer-column">
         <h5>Product and Services</h5>
         <ul class="footer-links">
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Appliances</a></li>
-            <li>
-                <a href="#">Storage</a>
-                <button type="button">New</button>
-            </li>
-            <li><a href="#">Lifestyle</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Appliances</a></li>
+          <li>
+            <a href="#">Storage</a>
+            <button type="button">New</button>
+          </li>
+          <li><a href="#">Lifestyle</a></li>
         </ul>
-    </div>
+      </div>
 
-    <div class="footer-column">
+      <div class="footer-column">
         <h5>Shop Now</h5>
         <ul class="footer-links">
-            <li><a href="#">Offer</a></li>
-            <li><a href="#">Promo</a></li>
-            <li><a href="#">Online Shop</a></li>
-            <li><a href="#">Business Offer</a>
-            <button type="button">New</button></li>
-            <li><a href="#">Student Offer</a></li>
+          <li><a href="#">Offer</a></li>
+          <li><a href="#">Promo</a></li>
+          <li><a href="#">Online Shop</a></li>
+          <li>
+            <a href="#">Business Offer</a> <button type="button">New</button>
+          </li>
+          <li><a href="#">Student Offer</a></li>
         </ul>
-    </div>
+      </div>
 
-    <div class="footer-column">
+      <div class="footer-column">
         <h5>Support</h5>
         <ul class="footer-links">
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Email Support</a></li>
-            <li><a href="#">Live Chat</a></li>
-            <li><a href="#">Phone Support</a>
-            <button type="button">New</button></li>
-            <li><a href="#">Rewards</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Email Support</a></li>
+          <li><a href="#">Live Chat</a></li>
+          <li>
+            <a href="#">Phone Support</a> <button type="button">New</button>
+          </li>
+          <li><a href="#">Rewards</a></li>
         </ul>
-    </div>
+      </div>
 
-    <div class="footer-column">
+      <div class="footer-column">
         <h5>Account</h5>
         <ul class="footer-links">
-            <li><a href="#">My Product</a></li>
-            <li><a href="#">Offer</a></li>
-            <li><a href="#">Wishlist</a></li>
-            <li><a href="#">Service</a>
-            <button type="button">New</button></li>
-            <li><a href="#">Reward</a></li>
+          <li><a href="#">My Product</a></li>
+          <li><a href="#">Offer</a></li>
+          <li><a href="#">Wishlist</a></li>
+          <li><a href="#">Service</a> <button type="button">New</button></li>
+          <li><a href="#">Reward</a></li>
         </ul>
-    </div>
+      </div>
 
-    <div class="footer-column">
+      <div class="footer-column">
         <h5>About</h5>
         <ul class="footer-links">
-            <li><a href="#">Company Info</a></li>
-            <li><a href="#">Brand Guideline</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Investors</a>
-            <button type="button">New</button></li>
-            <li><a href="#">About Us</a></li>
+          <li><a href="#">Company Info</a></li>
+          <li><a href="#">Brand Guideline</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Investors</a> <button type="button">New</button></li>
+          <li><a href="#">About Us</a></li>
         </ul>
-    </div>
+      </div>
+    </footer>
+  <script>
+//    lists and loops. iteration,
+const dishList = document.getElementById("dish-list"); // ul element
 
-</footer>
+const dish = {
+    name: "Breakfast Food",
+    price: "$20",
+    image_url: "images/Frame 45 (1).png"
+}
 
+const dishes = [dish, { name: "Lunch Special", price: "$25", image_url: "images/Frame 45 (2).png" }, { name: "Dinner Delight", price: "$30", image_url: "images/Frame 45 (3).png" }, { name: "Dessert Treats", price: "$15", image_url: "images/Frame 45 (4).png" }, { name: "Beverages", price: "$5", image_url: "images/Frame 45 (5).png" }];
+for (let i = 0; i < dishes.length; i++) {
+  const li = document.createElement("li");
+  li.textContent = `${dishes[i].name} - ${dishes[i].price}`;
+  dishList.appendChild(li);
+}
+
+
+
+  </script>
 </body>
 </html>
