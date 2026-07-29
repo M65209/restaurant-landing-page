@@ -8,7 +8,7 @@ const headerHTML =`
     </div>
     <nav class="navbar flex">
       <ul class="nav-links flex">
-        <li><a href="/pages/index.html">Home</a></li>
+        <li><a href="../index.html">Home</a></li>
         <li><a href="/pages/about.html">About</a></li>
         <li><a href="/pages/menu.html">Menu</a></li>
         <li><a href="/pages/foods.html">Food</a></li>
