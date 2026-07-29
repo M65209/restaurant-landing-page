@@ -7,16 +7,7 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <!-- Navigation -->
-    <header>
-      <nav class="navbar flex" id="navbar">
-        <div class="logo">🍔 Foodie</div>
-        <ul class="nav-links flex" id="nav-links">
-         <!-- Navigation links will be populated by JavaScript -->
-        </ul>
-        <a href="#" class="text-primary p-8 rounded-md border border-primary">Login</a>
-      </nav>
-    </header>
+    <div id="site-header"></div>
 
     <!-- Hero Section -->
     <section class="hero flex space-between">
@@ -81,7 +72,7 @@
           <p>
             Contrary to popular belief, Lorem Ipsum is not simply random text.
           </p>
-          <a href="#">Learn More</a>
+          <a href="Learn More">Learn More</a>
         </div>
 
         <div class="feature-card">
@@ -90,7 +81,7 @@
           <p>
             Contrary to popular belief, Lorem Ipsum is not simply random text.
           </p>
-          <a href="#">Learn More</a>
+          <a href="Learn More">Learn More</a>
         </div>
       </div>
     </section>
@@ -134,49 +125,7 @@
         </p>
       </div>
 
-      <div class="food-container">
-        <div class="food-card flex">
-          <img src="images/Frame 45 (1).png" alt="Breakfast Food" />
-          <h3>Breakfast Food</h3>
-          <p>$20</p>
-        </div>
-
-        <div class="food-card flex">
-          <img src="images/Frame 45 (2).png" alt="Breakfast Food" />
-          <h3>Breakfast Food</h3>
-          <p>$25</p>
-        </div>
-
-        <div class="food-card flex">
-          <img src="images/Frame 45 (3).png" alt="Breakfast Food" />
-          <h3>Breakfast Food</h3>
-          <p>$30</p>
-        </div>
-
-        <div class="food-card flex">
-          <img src="images/Frame 45.png" alt="Breakfast Food" />
-          <h3>Breakfast Food</h3>
-          <p>$35</p>
-        </div>
-
-        <div class="food-card flex">
-          <img src="images/Frame 45 (4).png" alt="Breakfast Food" />
-          <h3>Breakfast Food</h3>
-          <p>$18</p>
-        </div>
-
-        <div class="food-card flex">
-          <img src="images/Frame 45 (5).png" alt="Breakfast Food" />
-          <h3>Breakfast Food</h3>
-          <p>$15</p>
-        </div>
-
-        <div class="food-card flex">
-          <img src="images/Frame 45 (5).png" alt="Breakfast Food" />
-          <h3>Breakfast Food</h3>
-          <p>$15</p>
-        </div>
-      </div>
+      <div class="food-container" id="dish-cards"></div>
     </section>
 
     <!-- List dishes -->
@@ -226,90 +175,10 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer flex">
-      <div class="footer-column">
-        <h5>Product and Services</h5>
-        <ul class="footer-links">
-          <li><a href="#">Product</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Appliances</a></li>
-          <li>
-            <a href="#">Storage</a>
-            <button type="button">New</button>
-          </li>
-          <li><a href="#">Lifestyle</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column">
-        <h5>Shop Now</h5>
-        <ul class="footer-links">
-          <li><a href="#">Offer</a></li>
-          <li><a href="#">Promo</a></li>
-          <li><a href="#">Online Shop</a></li>
-          <li>
-            <a href="#">Business Offer</a> <button type="button">New</button>
-          </li>
-          <li><a href="#">Student Offer</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column">
-        <h5>Support</h5>
-        <ul class="footer-links">
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Email Support</a></li>
-          <li><a href="#">Live Chat</a></li>
-          <li>
-            <a href="#">Phone Support</a> <button type="button">New</button>
-          </li>
-          <li><a href="#">Rewards</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column">
-        <h5>Account</h5>
-        <ul class="footer-links">
-          <li><a href="#">My Product</a></li>
-          <li><a href="#">Offer</a></li>
-          <li><a href="#">Wishlist</a></li>
-          <li><a href="#">Service</a> <button type="button">New</button></li>
-          <li><a href="#">Reward</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column">
-        <h5>About</h5>
-        <ul class="footer-links">
-          <li><a href="#">Company Info</a></li>
-          <li><a href="#">Brand Guideline</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Investors</a> <button type="button">New</button></li>
-          <li><a href="#">About Us</a></li>
-        </ul>
-      </div>
-    </footer>
-  <script>
-//    lists and loops. iteration,
-const dishList = document.getElementById("dish-list"); // ul element
-
-const dish = {
-    name: "Breakfast Food",
-    price: "$20",
-    image_url: "images/Frame 45 (1).png"
-}
-
-const dishes = [dish, { name: "Lunch Special", price: "$25", image_url: "images/Frame 45 (2).png" }, { name: "Dinner Delight", price: "$30", image_url: "images/Frame 45 (3).png" }, { name: "Dessert Treats", price: "$15", image_url: "images/Frame 45 (4).png" }, { name: "Beverages", price: "$5", image_url: "images/Frame 45 (5).png" }];
-for (let i = 0; i < dishes.length; i++) {
-  const li = document.createElement("li");
-  li.textContent = `${dishes[i].name} - ${dishes[i].price}`;
-  dishList.appendChild(li);
-}
-
-
-
-  </script>
-  <script src="scripts/layout.js"></script>
+    <div id="site-footer"></div>
+    <script src="scripts/layout.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/dishes.js"></script>
+    <div id="site-footer"></div>
 </body>
 </html>
